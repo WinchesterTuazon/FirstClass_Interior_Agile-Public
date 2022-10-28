@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="JS\java.js"></script>
+    <title>Captivate Interiors</title>
+</head>
+<body class="bg-secondary">
+        <header class="bg-white">
+            <div class="container">
+                <h1 class="text-center mb-0">
+                    <img src="Images\captivate.jpg" alt="Captivate Interiors Logo" class="pe-2" width="75">
+                    Captivate Interiors
+                </h1>
+            </div>   
+        </header>
+
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-toggle="navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navmenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ps-4">
+                            <a href="home.html" class="nav-link text-white">Home</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a href="shop.html" class="nav-link text-white">Shop</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a href="about_us.html" class="nav-link text-white">About Us</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a href="contact_us.html" class="nav-link text-white">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row bg-secondary">
+                <div class="col-lg-12">
+                    <h1 class="text-center">About Us</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3 text-center mx-auto mt-3 bg-light text-dark" style="max-width: 1050px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img id="CEO_IMG" src="Images/MD.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="750">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 id="CEO_HD" class="card-title">Adrian B. Griffin</h5>
+                  <p id="CEO_TXT" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img id="CEO_IMG" src="Images\ceo.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="750">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 id="CEO_HD" class="card-title">Haro G. Warmen</h5>
+                    <p id="CEO_TXT" class="card-text">The CEO of a corporation or company typically reports to the board of directors 
+                      and is charged with maximizing the value of the business, which may include maximizing the share 
+                      price, market share, revenues or another element. In the non-profit and government sector, 
+                      CEOs typically aim at achieving outcomes related to the organization's mission, usually provided 
+                      by legislation. CEOs are also frequently assigned the role of main manager of the organization and 
+                      the highest-ranking officer in the C-suite.The responsibilities of an organization's CEO are set 
+                      by the organization's board of directors or other authority, depending on the organization's 
+                      structure. They can be far-reaching or quite limited and are typically enshrined in a formal 
+                      delegation of authority regarding business administration. Typically, responsibilities include being 
+                      an active decision-maker on business strategy and other key policy issues, leader, manager, and executor.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+          
+
+          <section class="p-5 bg-dark">
+            <div class="container">
+                <h2 class="text-center text-white">Our Staff</h2>
+                <p class="lead text-center text-white mb-5">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" id="staff1" onmouseover="showButton1()" onmouseout="hideButton1()">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="Images\jeff.jpg" alt="" class="rounded-circle mb-3" width="250">
+                                    <h3 class="card-title mb-3">John Doe</h3>
+                                    <p class="card-text">Software development is the process of conceiving, specifying, designing, programming, documenting, 
+                                        testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components. 
+                                        Software development involves writing and maintaining the source code, but in a broader sense, it includes all processes 
+                                        from the conception of the desired software through to the final manifestation of the software, typically in a 
+                                        planned and structured process.</p>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                                <button id="button1" class="btn btn-primary" onclick="hideStaff1()">Hide Staff</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" id="staff2" onmouseover="showButton2()" onmouseout="hideButton2()">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="Images\james.jpg" alt="" class="rounded-circle mb-3" width="250">
+                                    <h3 class="card-title mb-3">James Smith</h3>
+                                    <p class="card-text">The sources of ideas for software products are plentiful. These ideas can come from market research 
+                                        including the demographics of potential new customers, existing customers, sales prospects who rejected the product, 
+                                        other internal software development staff, or a creative third party. Ideas for software products are usually first 
+                                        evaluated by marketing personnel for economic feasibility, for fit with existing channels distribution, for possible 
+                                        effects on existing product lines, required features, and for fit with the company's marketing objectives.</p>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                                <button id="button2" class="btn btn-primary" onclick="hideStaff2()">Hide Staff</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" id="staff3" onmouseover="showButton3()" onmouseout="hideButton3()">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="Images\jessica.jpg" alt="" class="rounded-circle mb-3" width="250">
+                                    <h3 class="card-title mb-3">Jessica McCay</h3>
+                                    <p class="card-text">Software development is the process of conceiving, specifying, designing, programming, documenting, 
+                                        testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components. 
+                                        Software development involves writing and maintaining the source code, but in a broader sense, it includes all processes 
+                                        from the conception of the desired software through to the final manifestation of the software, typically in a 
+                                        planned and structured process.</p>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                                <button id="button3" class="btn btn-primary" onclick="hideStaff3()">Hide Staff</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6" id="staff4" onmouseover="showButton4()" onmouseout="hideButton4()">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="Images\katelyn.jpg" alt="" class="rounded-circle mb-3" width="250">
+                                    <h3 class="card-title mb-3">Sarah Smith</h3>
+                                    <p class="card-text">The sources of ideas for software products are plentiful. These ideas can come from market research 
+                                        including the demographics of potential new customers, existing customers, sales prospects who rejected the product, 
+                                        other internal software development staff, or a creative third party. Ideas for software products are usually first 
+                                        evaluated by marketing personnel for economic feasibility, for fit with existing channels distribution, for possible 
+                                        effects on existing product lines, required features, and for fit with the company's marketing objectives</p>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                                <button id="button4" class="btn btn-primary" onclick="hideStaff4()">Hide Staff</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6" id="staff5" onmouseover="showButton5()" onmouseout="hideButton5()">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="Images\daniel.jpg" alt="" class="rounded-circle mb-3" width="250">
+                                    <h3 class="card-title mb-3">Daniel Smith</h3>
+                                    <p class="card-text">The sources of ideas for software products are plentiful. These ideas can come from market research 
+                                        including the demographics of potential new customers, existing customers, sales prospects who rejected the product, 
+                                        other internal software development staff, or a creative third party. Ideas for software products are usually first 
+                                        evaluated by marketing personnel for economic feasibility, for fit with existing channels distribution, for possible 
+                                        effects on existing product lines, required features, and for fit with the company's marketing objectives</p>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                                <button id="button5" class="btn btn-primary" onclick="hideStaff5()">Hide Staff</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6" id="staff6" onmouseover="showButton6()" onmouseout="hideButton6()">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="Images\Ann.jpg" alt="" class="rounded-circle mb-3" width="250">
+                                    <h3 class="card-title mb-3">Ann Whitlock</h3>
+                                    <p class="card-text">The sources of ideas for software products are plentiful. These ideas can come from market research 
+                                        including the demographics of potential new customers, existing customers, sales prospects who rejected the product, 
+                                        other internal software development staff, or a creative third party. Ideas for software products are usually first 
+                                        evaluated by marketing personnel for economic feasibility, for fit with existing channels distribution, for possible 
+                                        effects on existing product lines, required features, and for fit with the company's marketing objectives</p>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                                <button id="button6" class="btn btn-primary" onclick="hideStaff6()">Hide Staff</button>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div class="container d-flex flex-row justify-content-center pt-2">
+                <button id="showStaffbtn" class="btn btn-primary" onclick="showStaff()">Show All Staff</button>
+            </div>
+          </section>
+
+        <footer class="footer text-center text-white bg-secondary">
+            <div class="container-fluid">
+                <ul class="navbar-nav d-flex flex-row justify-content-center p-2">
+                    <li class="nav-item px-5">
+                        <a href="https://www.facebook.com/" class="nav-link text-white d-flex flex-row align-items-center">
+                            <img src="Images\fb.png" alt="Facebook Icon" class="d-flex flex-row pe-2">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a href="https://www.instagram.com/" class="nav-link text-white d-flex flex-row align-items-center">
+                            <img src="Images\insta.png" alt="Instagram Icon" class="d-flex flex-row pe-2">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="nav-item px-5">
+                        
+                        <a href="https://twitter.com/?lang=en-nz" class="nav-link text-white d-flex flex-row align-items-center">
+                            <img src="Images\twitter.png" alt="Twitter Icon" class="d-flex flex-row pe-2">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a href="https://www.linkedin.com/" class="nav-link text-white d-flex flex-row align-items-center">
+                            <img src="Images\linkedin.png" alt="Linkedin Icon" class="d-flex flex-row pe-2">
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+                <div class="row justify-content-end">
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        Copyright &copy; 2022 Polar INC
+                    </div>
+                    <div class="col-4 ">
+                        <a href="#" class="float-end p-3">
+                            <i class="bi bi-arrow-up-circle h1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script>
+            function changeMD()
+            {
+            var CEO_Heading = document.getElementById('CEO_HD');
+            var CEO_Desc = document.getElementById('CEO_TXT');
+            var CEO_Image = document.getElementById('CEO_IMG');
+            var CEO_Button = document.getElementById('CEO_BTN');
+
+
+            if(CEO_Heading.textContent == "Haro G. Warmen")
+            {
+            CEO_Heading.innerHTML = "Adrian B. Griffin"
+            CEO_Desc.innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            CEO_Image.src = "Images/MD.jpg"
+            CEO_Button.textContent = "Change To CEO"
+            }
+            else
+            {
+            CEO_Heading.innerHTML = "Haro G. Warmen"
+            CEO_Desc.innerHTML = "The CEO of a corporation or company typically reports to the board of directors and is charged with maximizing the value of the business, which may include maximizing the share price, market share, revenues or another element. In the non-profit and government sector, CEOs typically aim at achieving outcomes related to the organization's mission, usually provided by legislation. CEOs are also frequently assigned the role of main manager of the organization and the highest-ranking officer in the C-suite.The responsibilities of an organization's CEO are setby the organization's board of directors or other authority, depending on the organization's structure. They can be far-reaching or quite limited and are typically enshrined in a formal delegation of authority regarding business administration. Typically, responsibilities include being an active decision-maker on business strategy and other key policy issues, leader, manager, and executor."
+            CEO_Image.src = "Images/ceo.jpg"
+            CEO_Button.textContent = "Change To MD"
+            }
+            }
+
+            var button1 = document.getElementById('button1')
+            var button2 = document.getElementById('button2')
+            var button3 = document.getElementById('button3')
+            var button4 = document.getElementById('button4')
+            var button5 = document.getElementById('button5')
+            var button6 = document.getElementById('button6')
+
+            var staff1 = document.getElementById('staff1')
+            var staff2 = document.getElementById('staff2')
+            var staff3 = document.getElementById('staff3')
+            var staff4 = document.getElementById('staff4')
+            var staff5 = document.getElementById('staff5')
+            var staff6 = document.getElementById('staff6')
+
+            button1.style.visibility = "hidden"
+            button2.style.visibility = "hidden"
+            button3.style.visibility = "hidden"
+            button4.style.visibility = "hidden"
+            button5.style.visibility = "hidden"
+            button6.style.visibility = "hidden"
+
+            function hideStaff1(){
+                staff1.style.visibility = "hidden"
+            }
+            function hideStaff2(){
+                staff2.style.visibility = "hidden"
+            }
+            function hideStaff3(){
+                staff3.style.visibility = "hidden"
+            }
+            function hideStaff4(){
+                staff4.style.visibility = "hidden"
+            }
+            function hideStaff5(){
+                staff5.style.visibility = "hidden"
+            }
+            function hideStaff6(){
+                staff5.style.visibility = "hidden"
+            }
+
+            function showButton1()
+            {
+                button1.style.visibility = "visible";
+            }
+            function showButton2()
+            {
+                button2.style.visibility = "visible";
+            }
+            function showButton3()
+            {
+                button3.style.visibility = "visible";
+            }
+            function showButton4()
+            {
+                button4.style.visibility = "visible";
+            }
+            function showButton5()
+            {
+                button5.style.visibility = "visible";
+            }
+            function showButton6()
+            {
+                button5.style.visibility = "visible";
+            }
+
+            function hideButton1()
+            {
+                button1.style.visibility = "hidden"
+            }
+            function hideButton2()
+            {
+                button2.style.visibility = "hidden"
+            }
+            function hideButton3()
+            {
+                button3.style.visibility = "hidden"
+            }
+            function hideButton4()
+            {
+                button4.style.visibility = "hidden"
+            }
+            function hideButton5()
+            {
+                button5.style.visibility = "hidden"
+            }
+            function hideButton6()
+            {
+                button6.style.visibility = "hidden"
+            }
+
+            function showStaff(){
+                staff1.style.visibility = "visible"
+                staff2.style.visibility = "visible"
+                staff3.style.visibility = "visible"
+                staff4.style.visibility = "visible"
+                staff5.style.visibility = "visible"
+                staff6.style.visibility = "visible"
+            }
+        </script>
+                
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
